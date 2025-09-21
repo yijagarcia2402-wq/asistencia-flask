@@ -6,7 +6,6 @@ app = Flask(_name_)
 def home():
     return "<h1>📋 Control de Asistencia</h1><p>Bienvenido al sistema</p>"
 
-# 🔹 Aquí está el endpoint que espera el Hikvision
 @app.route("/recibir_evento", methods=["POST"])
 def recibir_evento():
     data = request.data.decode("utf-8")
